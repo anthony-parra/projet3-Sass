@@ -1,3 +1,7 @@
+/* -----------------------------Fichier @import variables-------------------------- */
+/* ----------------------VARIABLES FONT-FACE-------------------------*/
+/* ----------------------VARIABLES COULEURS-------------------------*/
+/* -----------------------------MIXIN------------------------------*/
 /* -----------------------------Fichier @import pour toutes les pages-------------------------- */
 @font-face {
   font-family: "PeacerfulDay";
@@ -9,8 +13,7 @@ body {
   margin: auto;
   font-family: Helvetica;
 }
-
-a {
+body a {
   text-decoration: none;
   color: #fdcb46;
 }
@@ -25,6 +28,9 @@ a {
   color: #fdcb46;
   padding-left: 25px;
   padding-right: 25px;
+}
+.mentions__contact:hover {
+  animation: wiggle 0.7s infinite;
 }
 
 @keyframes wiggle {
@@ -41,10 +47,7 @@ a {
     transform: rotate(-5deg);
   }
 }
-.mentions__contact:hover {
-  animation: wiggle 0.7s infinite;
-}
-
+/* --------------------------------------Responsive----------------------------- */
 @media screen and (max-width: 767px) {
   .mentions {
     font-size: 1.5em;
@@ -65,7 +68,16 @@ header {
   margin-bottom: 100px;
 }
 
-.suspension::after {
+.suspension {
+  background-color: #579c87;
+  border-radius: 15px;
+  color: #fdcb46;
+  font-size: 3em;
+  font-weight: normal;
+  padding: 20px 50px 20px 50px;
+  width: 370px;
+}
+.suspension:after {
   animation: suspension steps(1, end) 1s infinite;
   content: "";
 }
@@ -129,13 +141,9 @@ h1 {
 }
 
 h2 {
-  background-color: #579c87;
-  border-radius: 15px;
-  color: #fdcb46;
-  font-size: 3em;
-  font-weight: normal;
-  padding: 20px 50px 20px 50px;
-  width: 370px;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 2.3em;
 }
 
 .bloc__menu--enchante {
@@ -146,22 +154,22 @@ h2 {
   width: 45%;
   height: 600px;
   margin-right: 25px;
-  background-color: #fcdfdb;
   box-shadow: 0px 0px 12px #555;
   border: none;
   text-align: center;
+  background-color: #fcdfdb;
 }
 
 .titre__image {
   font-family: "Devonshire";
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: normal;
   color: black;
 }
 
 .menu__enchante--titre {
   font-family: "Comic sans MS";
-  font-size: 2.5em;
+  font-size: 2.3em;
   color: black;
 }
 
@@ -172,15 +180,16 @@ h2 {
   border: 2px solid black;
   width: 45%;
   height: 600px;
-  background-color: #fff5fe;
+  margin-right: 25px;
   box-shadow: 0px 0px 12px #555;
   border: none;
   text-align: center;
+  background-color: #fff5fe;
 }
 
 .menu__titre--chic {
   font-family: "croissant one";
-  font-size: 2em;
+  font-size: 2.3em;
   background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -188,7 +197,7 @@ h2 {
 
 .menu__titre--menu--chic {
   font-family: "Georgia";
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-weight: bold;
   color: #c77412;
 }
@@ -201,15 +210,15 @@ h2 {
   width: 45%;
   height: 600px;
   margin-right: 25px;
-  background-color: #f9f9f9;
   box-shadow: 0px 0px 12px #555;
   border: none;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .menu__titre--delice {
   font-family: "dancing script";
-  font-size: 2.5em;
+  font-size: 2.3em;
   background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -218,7 +227,7 @@ h2 {
 .menu__titre-menu--delice {
   font-family: "PeacerfulDay";
   font-style: italic;
-  font-size: 2.5em;
+  font-size: 2.3em;
   color: #0066f9;
 }
 
@@ -229,15 +238,16 @@ h2 {
   border: 2px solid black;
   width: 45%;
   height: 600px;
-  background-color: #fdfffd;
+  margin-right: 25px;
   box-shadow: 0px 0px 12px #555;
   border: none;
   text-align: center;
+  background-color: #fdfffd;
 }
 
 .menu__titre--palette {
   font-family: "kaushan script";
-  font-size: 2.5em;
+  font-size: 2.3em;
   background: -webkit-linear-gradient(45deg, #3d843a, #b6ff75);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -246,7 +256,7 @@ h2 {
 .menu__titre--menu--palette {
   font-family: "PeacerfulDay";
   font-style: italic;
-  font-size: 2.5em;
+  font-size: 2.3em;
   color: #53b02c;
 }
 
@@ -325,6 +335,125 @@ h2 {
     height: 500px;
   }
 }
-/* ---------------------------------Fichier @import pour les menus------------------------------ */
+/* -----------------------------Fichier @import pour les menus-------------------------- */
+.bloc__enchante {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px 50px 50px;
+  background-color: #fcdfdb;
+  box-shadow: 0px 0px 12px #555;
+  text-align: left;
+}
+
+.image__enchantee {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Devonshire", cursive;
+}
+
+.titre__entree--enchante {
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+  font-family: "Kalam", cursive;
+  background: linear-gradient(to top, black 0%, black 3px, transparent 1px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.3s;
+  width: 30%;
+}
+
+.titre__entree--enchante:hover {
+  background-size: 100% 100%;
+}
+
+.bloc__info--prix--enchante {
+  display: flex;
+  font-family: "Kalam", cursive;
+}
+
+.bloc__info--enchante {
+  flex: 90;
+  font-family: "Kalam", cursive;
+  font-size: 15px;
+}
+
+.bloc__prix--enchante {
+  flex: 10;
+  text-align: right;
+  font-weight: bold;
+}
+
+.image__menu--bottom {
+  padding-top: 20px;
+  font-size: 2em;
+  font-family: "Devonshire", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----------------------------------------------------------RESPONSIVE--------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .mentions__contact {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.8em;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  .trait__image {
+    width: 35%;
+  }
+
+  .note__musique {
+    width: 60px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  figure {
+    font-size: 1.5em;
+  }
+
+  .bloc__info--prix--enchante {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloc__enchante {
+    width: 90%;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .bloc__info--enchante {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .bloc__prix--enchante {
+    font-size: 14px;
+  }
+
+  .image__menu--bottom {
+    font-size: 1.5em;
+  }
+
+  .bloc__titre--entree {
+    margin: 10px 0px 10px 0px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

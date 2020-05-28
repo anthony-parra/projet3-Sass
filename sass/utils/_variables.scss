@@ -1,0 +1,34 @@
+/* ----------------------VARIABLES FONT-FACE-------------------------*/
+
+
+/* ----------------------VARIABLES COULEURS-------------------------*/
+
+$colorPrimary :#fdcb46;
+$colorTitleEnchantee: black;
+$colorTitlePalette: #53b02c;
+$colorTitleChic: #c77412;
+$colorTitlePapille: #0066f9;
+$backGroundColorHeaderFooter: #579c87;
+$backGroundColorEnchantee: #fcdfdb;
+$backGroundColorPalette: #fdfffd;
+$backGroundColorChic :#fff5fe;
+$backGroundColorPapille :#f9f9f9;
+
+/* -----------------------------MIXIN------------------------------*/
+
+@mixin bloc_menu_accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 45%;
+    height: 600px;
+    margin-right: 25px;
+    box-shadow: 0px 0px 12px #555;
+    border: none;
+    text-align: center;
+}
+
+@mixin sizeTitle {
+    font-size: 2.3em;
+}

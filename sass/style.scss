@@ -1,3 +1,7 @@
+/* -----------------------------Fichier @import variables-------------------------- */
+
+@import "./utils/variables";
+
 /* -----------------------------Fichier @import pour toutes les pages-------------------------- */
 
 @import "./base/fonts";
@@ -15,4 +19,6 @@
 @import "./pages/Menu_page_accueil/la_palette_du_gout";
 @import "./pages/Menu_page_accueil/responsive";
 
-/* ---------------------------------Fichier @import pour les menus------------------------------ */
+/* -----------------------------Fichier @import pour les menus-------------------------- */
+
+@import "./pages/Menu/menu_la_note_enchantee";

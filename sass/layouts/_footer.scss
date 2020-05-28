@@ -4,9 +4,18 @@
     margin-bottom: 100px;
 }
 
-.suspension::after {
-    animation: suspension steps(1, end) 1s infinite;
-    content: '';
+.suspension {
+    background-color: #579c87;
+    border-radius: 15px;
+    color: #fdcb46;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 20px 50px 20px 50px;
+    width: 370px;
+    &:after {
+        animation: suspension steps(1, end) 1s infinite;
+        content: '';
+    }
 }
 
 @keyframes suspension {
@@ -32,8 +41,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #579c87;
-    color: #fdcb46;
+    background-color: $backGroundColorHeaderFooter;
+    color: $colorPrimary;
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
     font-size: 1.5em;

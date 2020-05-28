@@ -1,0 +1,108 @@
+.bloc__enchante {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 50px 50px;
+    background-color: #fcdfdb;
+    box-shadow: 0px 0px 12px #555;
+    text-align: left;
+}
+
+.image__enchantee {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Devonshire', cursive;
+}
+
+.titre__entree--enchante {
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Kalam', cursive;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 3px, transparent 1px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s;
+    width: 30%;
+}
+
+.titre__entree--enchante:hover {
+    background-size: 100% 100%;
+}
+
+.bloc__info--prix--enchante {
+    display: flex;
+    font-family: 'Kalam', cursive;
+}
+
+.bloc__info--enchante {
+    flex: 90;
+    font-family: 'Kalam', cursive;
+    font-size: 15px;
+}
+
+.bloc__prix--enchante {
+    flex: 10;
+    text-align: right;
+    font-weight: bold;
+}
+
+.image__menu--bottom {
+    padding-top: 20px;
+    font-size: 2em;
+    font-family: 'Devonshire', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -----------------------------------------------------------RESPONSIVE--------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .mentions__contact {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 0.8em;
+    }
+    img {
+        width: 100px;
+    }
+    .trait__image {
+        width: 35%;
+    }
+    .note__musique {
+        width: 60px;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    figure {
+        font-size: 1.5em;
+    }
+    .bloc__info--prix--enchante {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloc__enchante {
+        width: 90%;
+        padding: 0px 10px 0px 10px;
+    }
+    .bloc__info--enchante {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .bloc__prix--enchante {
+        font-size: 14px;
+    }
+    .image__menu--bottom {
+        font-size: 1.5em;
+    }
+    .bloc__titre--entree {
+        margin: 10px 0px 10px 0px;
+    }
+}

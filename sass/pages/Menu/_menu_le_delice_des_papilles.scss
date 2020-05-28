@@ -1,0 +1,112 @@
+.bloc_delice {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 80px 10px;
+    background-color: #e8ebeb;
+    box-shadow: 0px 0px 12px #555;
+    text-align: left;
+}
+
+.bloc__titre--menu--delice {
+    text-align: center;
+    font-size: 3em;
+    margin: 50px 0px 20px 0px;
+    font-family: 'Dancing Script', cursive;
+    background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titre__entree--delice {
+    color: black;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Kalam', cursive;
+    background: linear-gradient(to top, rgb(0, 0, 211) 0%, rgb(0, 0, 211) 3px, transparent 1px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s;
+    width: 30%;
+}
+
+.titre__entree--delice:hover {
+    background-size: 100% 100%;
+}
+
+.titre__plat--delice {
+    color: black;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Kalam', cursive;
+    background: linear-gradient(to top, rgb(15, 86, 239) 0%, rgb(15, 86, 239) 3px, transparent 1px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s;
+    width: 30%;
+}
+
+.titre__plat--delice:hover {
+    background-size: 100% 100%;
+}
+
+.titre__dessert--delice {
+    color: black;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Kalam', cursive;
+    background: linear-gradient(to top, rgb(32, 137, 247) 0%, rgb(32, 137, 247) 3px, transparent 1px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s;
+    width: 30%;
+}
+
+.titre__dessert--delice:hover {
+    background-size: 100% 100%;
+}
+
+.bloc__info--prix--delice {
+    display: flex;
+    margin: 0px 50px 0px 50px;
+    color: black;
+}
+
+.info__delice {
+    font-family: 'Kalam', cursive;
+    font-size: 15px;
+}
+
+.prix__delice {
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    flex: 10;
+    text-align: right;
+}
+
+
+/* -----------------------------------------------------------RESPONSIVE--------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .bloc_delice {
+        width: 90%;
+        padding: 0px 10px 60px 10px;
+    }
+    .bloc__titre--menu--delice {
+        font-size: 2em;
+    }
+    .titre__entree--delice {
+        font-size: 1em;
+    }
+    .titre__plat--delice {
+        font-size: 1em;
+    }
+    .titre__dessert--delice {
+        font-size: 1em;
+    }
+    .bloc__info--prix--delice {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .prix__delice {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 0px;
+    }
+}

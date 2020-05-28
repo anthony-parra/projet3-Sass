@@ -5,9 +5,12 @@
 }
 
 .mentions__contact {
-    color: #fdcb46;
+    color: $colorPrimary;
     padding-left: 25px;
     padding-right: 25px;
+    &:hover {
+        animation: wiggle 0.7s infinite;
+    }
 }
 
 @keyframes wiggle {
@@ -30,9 +33,8 @@
     }
 }
 
-.mentions__contact:hover {
-    animation: wiggle 0.7s infinite;
-}
+
+/* --------------------------------------Responsive----------------------------- */
 
 @media screen and (max-width: 767px) {
     .mentions {

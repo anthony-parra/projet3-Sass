@@ -1,19 +1,11 @@
 .bloc__menu--palette {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    width: 45%;
-    height: 600px;
-    background-color: #fdfffd;
-    box-shadow: 0px 0px 12px #555;
-    border: none;
-    text-align: center;
+    @include bloc_menu_accueil;
+    background-color: $backGroundColorPalette;
 }
 
 .menu__titre--palette {
     font-family: "kaushan script";
-    font-size: 2.5em;
+    @include sizeTitle;
     background: -webkit-linear-gradient(45deg, #3d843a, #b6ff75);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,6 +14,6 @@
 .menu__titre--menu--palette {
     font-family: 'PeacerfulDay';
     font-style: italic;
-    font-size: 2.5em;
-    color: #53b02c;
+    @include sizeTitle;
+    color: $colorTitlePalette;
 }

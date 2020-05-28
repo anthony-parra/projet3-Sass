@@ -1,26 +1,17 @@
 .bloc__menu--enchante {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    width: 45%;
-    height: 600px;
-    margin-right: 25px;
-    background-color: #fcdfdb;
-    box-shadow: 0px 0px 12px #555;
-    border: none;
-    text-align: center;
+    @include bloc_menu_accueil;
+    background-color: $backGroundColorEnchantee;
 }
 
 .titre__image {
     font-family: 'Devonshire';
-    font-size: 2.5em;
+    @include sizeTitle;
     font-weight: normal;
-    color: black;
+    color: $colorTitleEnchantee;
 }
 
 .menu__enchante--titre {
     font-family: 'Comic sans MS';
-    font-size: 2.5em;
-    color: black;
+    @include sizeTitle;
+    color: $colorTitleEnchantee;
 }
