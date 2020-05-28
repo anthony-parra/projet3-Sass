@@ -1,5 +1,29 @@
 /* ----------------------VARIABLES FONT-FACE-------------------------*/
 
+@mixin policeEnchanteeTitre {
+    font-family: 'Devonshire', cursive;
+}
+
+@mixin policeEnchantee {
+    font-family: 'Kalam', cursive;
+}
+
+@mixin policeChicTitre {
+    font-family: 'Croissant One', cursive;
+}
+
+@mixin policeChicTexte {
+    font-family: 'Georgia';
+}
+
+@mixin policeDeliceTitre {
+    font-family: 'Dancing Script', cursive;
+}
+
+@mixin policePaletteTitre {
+    font-family: 'Kaushan Script', cursive;
+}
+
 
 /* ----------------------VARIABLES COULEURS-------------------------*/
 
@@ -8,6 +32,10 @@ $colorTitleEnchantee: black;
 $colorTitlePalette: #53b02c;
 $colorTitleChic: #c77412;
 $colorTitlePapille: #0066f9;
+$colorEntreeChic :#b86011;
+$colorPlatChic :#935087;
+$colorDessertChic:#5a32c0;
+$colorTitreDelice: black;
 $backGroundColorHeaderFooter: #579c87;
 $backGroundColorEnchantee: #fcdfdb;
 $backGroundColorPalette: #fdfffd;
@@ -31,4 +59,50 @@ $backGroundColorPapille :#f9f9f9;
 
 @mixin sizeTitle {
     font-size: 2.3em;
+}
+
+@mixin sizeTitleMenu {
+    font-size: 18px;
+}
+
+@mixin sizeText {
+    font-size: 15px;
+}
+
+@mixin blocAllMenus {
+    .bloc__titre--entree {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .trait__image {
+        width: 30%;
+    }
+    .bloc__tous--les--menus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+}
+
+@mixin bloc__menu {
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    padding-bottom: 10px;
+    background-size: 0 100%;
+    transition: background-size .3s;
+    width: 40%;
+    &:hover {
+        background-size: 100% 100%;
+    }
+}
+
+@mixin bloc__info--menu {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 12px #555;
+    text-align: left;
 }

@@ -1,80 +1,58 @@
+@include blocAllMenus;
 .bloc_delice {
-    display: flex;
-    flex-direction: column;
+    @include bloc__info--menu;
     padding: 0px 10px 80px 10px;
-    background-color: #e8ebeb;
-    box-shadow: 0px 0px 12px #555;
-    text-align: left;
+    background-color: $backGroundColorPapille;
 }
 
 .bloc__titre--menu--delice {
     text-align: center;
-    font-size: 3em;
+    @include sizeTitle;
     margin: 50px 0px 20px 0px;
-    font-family: 'Dancing Script', cursive;
+    @include policeDeliceTitre;
     background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .titre__entree--delice {
-    color: black;
+    color: $colorTitreDelice;
     margin: 0px 10px 0px 10px;
-    font-family: 'Kalam', cursive;
+    @include policeEnchantee;
     background: linear-gradient(to top, rgb(0, 0, 211) 0%, rgb(0, 0, 211) 3px, transparent 1px) no-repeat;
-    background-size: 0 100%;
-    transition: background-size .3s;
-    width: 30%;
-}
-
-.titre__entree--delice:hover {
-    background-size: 100% 100%;
+    @include bloc__menu;
 }
 
 .titre__plat--delice {
-    color: black;
+    color: $colorTitreDelice;
     margin: 0px 10px 0px 10px;
-    font-family: 'Kalam', cursive;
+    @include policeEnchantee;
     background: linear-gradient(to top, rgb(15, 86, 239) 0%, rgb(15, 86, 239) 3px, transparent 1px) no-repeat;
-    background-size: 0 100%;
-    transition: background-size .3s;
-    width: 30%;
-}
-
-.titre__plat--delice:hover {
-    background-size: 100% 100%;
+    @include bloc__menu;
 }
 
 .titre__dessert--delice {
-    color: black;
+    color: $colorTitreDelice;
     margin: 0px 10px 0px 10px;
-    font-family: 'Kalam', cursive;
+    @include policeEnchantee;
     background: linear-gradient(to top, rgb(32, 137, 247) 0%, rgb(32, 137, 247) 3px, transparent 1px) no-repeat;
-    background-size: 0 100%;
-    transition: background-size .3s;
-    width: 30%;
-}
-
-.titre__dessert--delice:hover {
-    background-size: 100% 100%;
+    @include bloc__menu;
 }
 
 .bloc__info--prix--delice {
     display: flex;
     margin: 0px 50px 0px 50px;
-    color: black;
-}
-
-.info__delice {
-    font-family: 'Kalam', cursive;
-    font-size: 15px;
-}
-
-.prix__delice {
-    font-family: 'Kalam', cursive;
-    font-weight: bold;
-    flex: 10;
-    text-align: right;
+    color: $colorTitreDelice;
+    .info__delice {
+        @include policeEnchantee;
+        @include sizeText;
+    }
+    .prix__delice {
+        @include policeEnchantee;
+        font-weight: bold;
+        flex: 10;
+        text-align: right;
+    }
 }
 
 

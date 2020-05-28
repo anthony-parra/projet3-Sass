@@ -1,56 +1,40 @@
 .bloc__enchante {
-    display: flex;
-    flex-direction: column;
+    @include bloc__info--menu;
     padding: 0px 50px 50px 50px;
-    background-color: #fcdfdb;
-    box-shadow: 0px 0px 12px #555;
-    text-align: left;
-}
-
-.image__enchantee {
-    text-align: center;
-    font-size: 3em;
-    font-family: 'Devonshire', cursive;
-}
-
-.titre__entree--enchante {
-    text-align: center;
-    margin: 0px 10px 0px 10px;
-    font-family: 'Kalam', cursive;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 3px, transparent 1px) no-repeat;
-    background-size: 0 100%;
-    transition: background-size .3s;
-    width: 30%;
-}
-
-.titre__entree--enchante:hover {
-    background-size: 100% 100%;
-}
-
-.bloc__info--prix--enchante {
-    display: flex;
-    font-family: 'Kalam', cursive;
-}
-
-.bloc__info--enchante {
-    flex: 90;
-    font-family: 'Kalam', cursive;
-    font-size: 15px;
-}
-
-.bloc__prix--enchante {
-    flex: 10;
-    text-align: right;
-    font-weight: bold;
-}
-
-.image__menu--bottom {
-    padding-top: 20px;
-    font-size: 2em;
-    font-family: 'Devonshire', cursive;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $backGroundColorEnchantee;
+    .image__enchantee {
+        text-align: center;
+        @include sizeTitle;
+        @include policeEnchanteeTitre;
+    }
+    @include blocAllMenus;
+    .bloc__info--prix--enchante {
+        display: flex;
+        @include policeEnchantee;
+    }
+    .titre__entree--enchante {
+        @include policeEnchantee;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 3px, transparent 1px) no-repeat;
+        @include bloc__menu;
+    }
+    .bloc__info--enchante {
+        flex: 90;
+        @include policeEnchantee;
+        @include sizeText;
+    }
+    .bloc__prix--enchante {
+        flex: 10;
+        text-align: right;
+        font-weight: bold;
+    }
+    .image__menu--bottom {
+        padding-top: 20px;
+        @include sizeTitle;
+        @include policeEnchanteeTitre;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 

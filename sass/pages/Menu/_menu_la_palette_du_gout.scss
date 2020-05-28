@@ -1,51 +1,42 @@
+@include blocAllMenus;
 .bloc_palette {
-    display: flex;
-    flex-direction: column;
+    @include bloc__info--menu;
     padding: 0px 50px 150px 50px;
-    background-color: #fcfffc;
-    box-shadow: 0px 0px 12px #555;
-    text-align: left;
+    background-color: $backGroundColorPalette;
 }
 
 .bloc__titre--menu--palette {
     text-align: center;
-    font-size: 3em;
+    @include sizeTitle;
     margin: 50px;
-    font-family: 'Kaushan Script', cursive;
+    @include policePaletteTitre;
     background: -webkit-linear-gradient(45deg, #3d843a, #b6ff75);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .bloc__menu--palette {
-    color: black;
+    color: $colorTitreDelice;
+    @include policeEnchantee;
     margin: 0px 10px 0px 10px;
-    padding-bottom: 10px;
     font-weight: normal;
     background: linear-gradient(to top, rgb(112, 196, 76) 0%, rgb(112, 196, 76) 3px, transparent 1px) no-repeat;
-    background-size: 0 100%;
-    transition: background-size .3s;
-    width: 30%;
-    font-family: 'Kalam', cursive;
-}
-
-.bloc__menu--palette:hover {
-    background-size: 100% 100%;
+    @include bloc__menu;
 }
 
 .bloc__info--prix--palette {
     display: flex;
     margin: 0px 50px 0px 50px;
-    color: black;
+    color: $colorTitreDelice;
 }
 
 .info__palette {
-    font-family: 'Kalam', cursive;
-    font-size: 15px;
+    @include policeEnchantee;
+    @include sizeText;
 }
 
 .prix__palette {
-    font-family: 'Kalam', cursive;
+    @include policeEnchantee;
     font-weight: bold;
     flex: 10;
     text-align: right;
