@@ -1,4 +1,8 @@
-/* No CSS */
-
+body {
+  background-color: black;
+}
+body p {
+  background-color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
