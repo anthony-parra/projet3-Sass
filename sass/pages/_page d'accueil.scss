@@ -1,0 +1,37 @@
+.zoom__effect {
+    transform: scale(1);
+    transition: .7s;
+    opacity: 1;
+}
+
+.zoom__effect:hover {
+    transform: scale(1.3);
+    transition: .7s;
+    opacity: 0.6;
+}
+
+.bloc__menu--enchante--chic {
+    margin: 50px 100px 25px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloc__menu--delice--palette {
+    margin: 25px 100px 50px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    background-color: #579c87;
+    border-radius: 15px;
+    color: #fdcb46;
+    font-size: 3em;
+    font-weight: normal;
+    padding: 20px 50px 20px 50px;
+    width: 370px;
+}

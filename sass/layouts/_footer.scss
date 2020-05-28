@@ -1,0 +1,40 @@
+.soon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.suspension::after {
+    animation: suspension steps(1, end) 1s infinite;
+    content: '';
+}
+
+@keyframes suspension {
+    0% {
+        content: '';
+    }
+    25% {
+        content: '.';
+    }
+    50% {
+        content: '..';
+    }
+    75% {
+        content: '...';
+    }
+    100% {
+        content: '';
+    }
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #579c87;
+    color: #fdcb46;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    font-size: 1.5em;
+}

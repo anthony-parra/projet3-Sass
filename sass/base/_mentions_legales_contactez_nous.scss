@@ -1,0 +1,41 @@
+.mentions {
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
+
+.mentions__contact {
+    color: #fdcb46;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@keyframes wiggle {
+    10%,
+    90% {
+        transform: rotate(5deg);
+    }
+    20%,
+    80% {
+        transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+        transform: rotate(10deg);
+    }
+    40%,
+    60% {
+        transform: rotate(-5deg);
+    }
+}
+
+.mentions__contact:hover {
+    animation: wiggle 0.7s infinite;
+}
+
+@media screen and (max-width: 767px) {
+    .mentions {
+        font-size: 1.5em;
+    }
+}
