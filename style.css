@@ -1,3 +1,4 @@
+/* -----------------------------Fichier @import pour toutes les pages-------------------------- */
 @font-face {
   font-family: "PeacerfulDay";
   src: url("font/PeacerfulDay.ttf.woff") format("woff"), url("font/PeacerfulDay.ttf.svg#PeacerfulDay") format("svg"), url("font/PeacerfulDay.ttf.eot"), url("font/PeacerfulDay.ttf.eot?#iefix") format("embedded-opentype");
@@ -98,6 +99,7 @@ footer {
   font-size: 1.5em;
 }
 
+/* -----------------------------Fichier @import pour la page d'accueil-------------------------- */
 .zoom__effect {
   transform: scale(1);
   transition: 0.7s;
@@ -323,5 +325,6 @@ h2 {
     height: 500px;
   }
 }
+/* ---------------------------------Fichier @import pour les menus------------------------------ */
 
 /*# sourceMappingURL=style.css.map */

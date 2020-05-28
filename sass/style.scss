@@ -1,12 +1,18 @@
+/* -----------------------------Fichier @import pour toutes les pages-------------------------- */
+
 @import "./base/fonts";
 @import "./base/main";
 @import "./base/mentions_legales_contactez_nous";
 @import "./layouts/header";
 @import "./layouts/footer";
-@import "./pages/page\ d\'accueil";
-@import "./pages/menus/menu_la_note_enchantee";
-@import "./pages/menus/menu_le_chic_a_la_francaise";
-@import "./pages/menus/menu_le_delice_des_papilles";
-@import "./pages/menus/menu_la_palette_du_gout";
-@import "./pages/menus/responsive";
-@import "./utils/variables";
+
+/* -----------------------------Fichier @import pour la page d'accueil-------------------------- */
+
+@import "./pages/Menu_page_accueil/page_accueil";
+@import "./pages/Menu_page_accueil/la_note_enchantee";
+@import "./pages/Menu_page_accueil/le_chic_a_la_francaise";
+@import "./pages/Menu_page_accueil/le_delice_des_papilles";
+@import "./pages/Menu_page_accueil/la_palette_du_gout";
+@import "./pages/Menu_page_accueil/responsive";
+
+/* ---------------------------------Fichier @import pour les menus------------------------------ */
