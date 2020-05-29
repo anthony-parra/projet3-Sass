@@ -43,16 +43,18 @@
     display: flex;
     margin: 0px 50px 0px 50px;
     color: $colorTitreDelice;
-    .info__delice {
-        @include policeEnchantee;
-        @include sizeText;
-    }
-    .prix__delice {
-        @include policeEnchantee;
-        font-weight: bold;
-        flex: 10;
-        text-align: right;
-    }
+}
+
+.info__delice {
+    @include policeEnchantee;
+    @include sizeText;
+}
+
+.prix__delice {
+    @include policeEnchantee;
+    font-weight: bold;
+    flex: 10;
+    text-align: right;
 }
 
 
@@ -64,27 +66,22 @@
         padding: 0px 10px 60px 10px;
     }
     .bloc__titre--menu--delice {
-        font-size: 2em;
+        @include sizeTitle;
     }
-    .titre__entree--delice {
-        font-size: 1em;
-    }
-    .titre__plat--delice {
-        font-size: 1em;
-    }
+    .titre__entree--delice,
+    .titre__plat--delice,
     .titre__dessert--delice {
-        font-size: 1em;
+        @include sizeTitleMenu;
     }
     .bloc__info--prix--delice {
         display: flex;
         flex-direction: column;
-        font-size: 12px;
+        @include sizeText;
         text-align: center;
-        margin-bottom: 15px;
-    }
-    .prix__delice {
-        text-align: center;
-        font-size: 13px;
-        margin-top: 0px;
+        .prix__delice {
+            text-align: center;
+            @include sizeText;
+            margin-top: 0px;
+        }
     }
 }

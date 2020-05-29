@@ -269,10 +269,21 @@ h2 {
   .bloc__menu--delice--palette {
     margin: 25px 50px 50px 50px;
   }
+
+  .titre__image,
+.menu__enchante--titre,
+.menu__titre--chic,
+.menu__titre--menu--chic,
+.menu__titre--delice,
+.menu__titre-menu--delice,
+.menu__titre--palette,
+.menu__titre--menu--palette {
+    font-size: 2em;
+  }
 }
 @media screen and (max-width: 700px) {
-  .suspension {
-    width: 170px;
+  .soon {
+    width: 250px;
   }
 
   .container {
@@ -280,25 +291,11 @@ h2 {
     flex-direction: column;
   }
 
-  h1 {
-    font-size: 3em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  .mentions__contact {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 0.8em;
-  }
-
   .bloc__menu--enchante--chic {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
   }
 
   .bloc__menu--delice--palette {
@@ -308,32 +305,19 @@ h2 {
     margin: 0px 10px 25px 10px;
   }
 
-  .bloc__menu--enchante {
+  .bloc__menu--enchante,
+.bloc__menu--delice {
     width: 100%;
     height: 500px;
     margin-right: 0px;
     margin-bottom: 10px;
   }
 
-  .bloc__menu--chic {
-    width: 100%;
-    height: 500px;
-  }
-
-  .menu__titre--chic {
-    font-size: 1.6em;
-  }
-
-  .bloc__menu--delice {
+  .bloc__menu--chic,
+.bloc__menu--palette--accueil {
     width: 100%;
     height: 500px;
     margin-right: 0px;
-    margin-bottom: 10px;
-  }
-
-  .bloc__menu--palette {
-    width: 100%;
-    height: 500px;
   }
 }
 /* -----------------------------Fichier @import pour les menus-------------------------- */
@@ -411,14 +395,6 @@ h2 {
     font-size: 0.8em;
   }
 
-  img {
-    width: 100px;
-  }
-
-  .trait__image {
-    width: 35%;
-  }
-
   .note__musique {
     width: 60px;
   }
@@ -428,15 +404,7 @@ h2 {
   }
 
   h2 {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1em;
-  }
-
-  figure {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .bloc__info--prix--enchante {
@@ -448,23 +416,13 @@ h2 {
     width: 90%;
     padding: 0px 10px 0px 10px;
   }
-
-  .bloc__info--enchante {
-    font-size: 14px;
+  .bloc__enchante .bloc__info--enchante {
+    font-size: 15px;
     text-align: center;
     margin-bottom: 0px;
   }
-
-  .bloc__prix--enchante {
-    font-size: 14px;
-  }
-
-  .image__menu--bottom {
-    font-size: 1.5em;
-  }
-
-  .bloc__titre--entree {
-    margin: 10px 0px 10px 0px;
+  .bloc__enchante .bloc__prix--enchante {
+    font-size: 15px;
   }
 }
 .bloc__titre--entree {
@@ -494,7 +452,8 @@ h2 {
   padding: 0px 10px 80px 10px;
   background-color: #fff5fe;
 }
-.bloc__chic .bloc__titre--menu--chic {
+
+.bloc__titre--menu--chic {
   text-align: center;
   margin: 100px 0px 50px 0px;
   font-size: 2.3em;
@@ -503,10 +462,11 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bloc__chic .titre__entree--chic {
+
+.titre__entree--chic {
   color: #b86011;
   font-family: "Georgia";
-  font-size: 18px;
+  font-size: 1.3em;
   background: linear-gradient(to top, #b86011 0%, #b86011 3px, transparent 1px) no-repeat;
   text-align: center;
   margin: 0px 10px 0px 10px;
@@ -516,25 +476,27 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-.bloc__chic .titre__entree--chic:hover {
+.titre__entree--chic:hover {
   background-size: 100% 100%;
 }
-.bloc__chic .bloc__info--prix--chic--entree {
+
+.bloc__info--prix--chic--entree {
   display: flex;
   font-family: "Georgia";
   color: #b86011;
   margin: 0px 50px 0px 50px;
 }
-.bloc__chic .info__chic {
+.bloc__info--prix--chic--entree .info__chic {
   flex: 90;
   font-family: "Georgia";
   font-size: 15px;
 }
-.bloc__chic .prix__chic {
+.bloc__info--prix--chic--entree .prix__chic {
   flex: 10;
   text-align: right;
 }
-.bloc__chic .titre__plat--chic {
+
+.titre__plat--chic {
   color: #935087;
   font-family: "Georgia";
   background: linear-gradient(to top, #935087 0%, #935087 3px, transparent 1px) no-repeat;
@@ -546,16 +508,18 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-.bloc__chic .titre__plat--chic:hover {
+.titre__plat--chic:hover {
   background-size: 100% 100%;
 }
-.bloc__chic .bloc__info--prix--chic--plat {
+
+.bloc__info--prix--chic--plat {
   display: flex;
   color: #935087;
   font-family: "Georgia";
   margin: 0px 50px 0px 50px;
 }
-.bloc__chic .titre__dessert--chic {
+
+.titre__dessert--chic {
   color: #5a32c0;
   font-family: "Georgia";
   background: linear-gradient(to top, #5a32c0 0%, #5a32c0 3px, transparent 1px) no-repeat;
@@ -567,10 +531,11 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-.bloc__chic .titre__dessert--chic:hover {
+.titre__dessert--chic:hover {
   background-size: 100% 100%;
 }
-.bloc__chic .info__chic--dessert {
+
+.info__chic--dessert {
   flex: 90;
   font-family: "Georgia";
   color: #5a32c0;
@@ -586,36 +551,18 @@ h2 {
   }
 
   .bloc__titre--menu--chic {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
-  .titre__entree--chic {
-    font-size: 0.8em;
+  .titre__entree--chic,
+.titre__plat--chic,
+.titre__dessert--chic {
+    font-size: 15px;
   }
 
-  .titre__plat--chic {
-    font-size: 0.8em;
-  }
-
-  .titre__dessert--chic {
-    font-size: 0.8em;
-  }
-
-  .bloc__info--prix--chic--entree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .bloc__info--prix--chic--plat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .info__chic--dessert {
+  .bloc__info--prix--chic--entree,
+.bloc__info--prix--chic--plat,
+.info__chic--dessert {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -624,17 +571,17 @@ h2 {
 
   .info__chic {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .prix__chic {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 0px;
   }
 
   .info__chic--dessert {
     margin-left: 0px;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 .bloc__titre--entree {
@@ -731,11 +678,13 @@ h2 {
   margin: 0px 50px 0px 50px;
   color: black;
 }
-.bloc__info--prix--delice .info__delice {
+
+.info__delice {
   font-family: "Kalam", cursive;
   font-size: 15px;
 }
-.bloc__info--prix--delice .prix__delice {
+
+.prix__delice {
   font-family: "Kalam", cursive;
   font-weight: bold;
   flex: 10;
@@ -750,32 +699,24 @@ h2 {
   }
 
   .bloc__titre--menu--delice {
-    font-size: 2em;
+    font-size: 2.3em;
   }
 
-  .titre__entree--delice {
-    font-size: 1em;
-  }
-
-  .titre__plat--delice {
-    font-size: 1em;
-  }
-
-  .titre__dessert--delice {
-    font-size: 1em;
+  .titre__entree--delice,
+.titre__plat--delice,
+.titre__dessert--delice {
+    font-size: 1.3em;
   }
 
   .bloc__info--prix--delice {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
-    margin-bottom: 15px;
   }
-
-  .prix__delice {
+  .bloc__info--prix--delice .prix__delice {
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 0px;
   }
 }
@@ -861,26 +802,19 @@ h2 {
   }
 
   .bloc__titre--menu--palette {
-    font-size: 1.5em;
-  }
-
-  .bloc__menu--palette {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
   .bloc__info--prix--palette {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 15px;
   }
-
-  .info__palette {
+  .bloc__info--prix--palette .info__palette {
     font-size: 15px;
     margin-bottom: 0px;
   }
-
-  .prix__palette {
+  .bloc__info--prix--palette .prix__palette {
     text-align: center;
     font-size: 15px;
   }

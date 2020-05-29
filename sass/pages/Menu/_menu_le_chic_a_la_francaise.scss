@@ -3,28 +3,31 @@
     @include bloc__info--menu;
     padding: 0px 10px 80px 10px;
     background-color: $backGroundColorChic;
-    .bloc__titre--menu--chic {
-        text-align: center;
-        margin: 100px 0px 50px 0px;
-        @include sizeTitle;
-        @include policeChicTitre;
-        background: -webkit-linear-gradient(-45deg, #d76a00, #6f1bfe);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .titre__entree--chic {
-        color: $colorEntreeChic;
-        @include policeChicTexte;
-        @include sizeTitleMenu;
-        background: linear-gradient(to top, rgba(184, 96, 17) 0%, rgba(184, 96, 17) 3px, transparent 1px) no-repeat;
-        @include bloc__menu;
-    }
-    .bloc__info--prix--chic--entree {
-        display: flex;
-        @include policeChicTexte;
-        color: $colorEntreeChic;
-        margin: 0px 50px 0px 50px;
-    }
+}
+
+.bloc__titre--menu--chic {
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+    @include sizeTitle;
+    @include policeChicTitre;
+    background: -webkit-linear-gradient(-45deg, #d76a00, #6f1bfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titre__entree--chic {
+    color: $colorEntreeChic;
+    @include policeChicTexte;
+    @include sizeTitleMenu;
+    background: linear-gradient(to top, rgba(184, 96, 17) 0%, rgba(184, 96, 17) 3px, transparent 1px) no-repeat;
+    @include bloc__menu;
+}
+
+.bloc__info--prix--chic--entree {
+    display: flex;
+    @include policeChicTexte;
+    color: $colorEntreeChic;
+    margin: 0px 50px 0px 50px;
     .info__chic {
         flex: 90;
         @include policeChicTexte;
@@ -34,31 +37,35 @@
         flex: 10;
         text-align: right;
     }
-    .titre__plat--chic {
-        color: $colorPlatChic;
-        @include policeChicTexte;
-        background: linear-gradient(to top, rgb(147, 80, 135) 0%, rgb(147, 80, 135) 3px, transparent 1px) no-repeat;
-        @include bloc__menu;
-    }
-    .bloc__info--prix--chic--plat {
-        display: flex;
-        color: $colorPlatChic;
-        @include policeChicTexte;
-        margin: 0px 50px 0px 50px;
-    }
-    .titre__dessert--chic {
-        color: $colorDessertChic;
-        @include policeChicTexte;
-        background: linear-gradient(to top, rgb(90, 50, 192) 0%, rgb(90, 50, 192) 3px, transparent 1px) no-repeat;
-        @include bloc__menu;
-    }
-    .info__chic--dessert {
-        flex: 90;
-        @include policeChicTexte;
-        color: $colorDessertChic;
-        @include sizeText;
-        margin-left: 50px;
-    }
+}
+
+.titre__plat--chic {
+    color: $colorPlatChic;
+    @include policeChicTexte;
+    background: linear-gradient(to top, rgb(147, 80, 135) 0%, rgb(147, 80, 135) 3px, transparent 1px) no-repeat;
+    @include bloc__menu;
+}
+
+.bloc__info--prix--chic--plat {
+    display: flex;
+    color: $colorPlatChic;
+    @include policeChicTexte;
+    margin: 0px 50px 0px 50px;
+}
+
+.titre__dessert--chic {
+    color: $colorDessertChic;
+    @include policeChicTexte;
+    background: linear-gradient(to top, rgb(90, 50, 192) 0%, rgb(90, 50, 192) 3px, transparent 1px) no-repeat;
+    @include bloc__menu;
+}
+
+.info__chic--dessert {
+    flex: 90;
+    @include policeChicTexte;
+    color: $colorDessertChic;
+    @include sizeText;
+    margin-left: 50px;
 }
 
 
@@ -70,45 +77,28 @@
         padding: 0px 10px 60px 10px;
     }
     .bloc__titre--menu--chic {
-        font-size: 1.5em;
+        @include sizeTitleMenu;
     }
-    .titre__entree--chic {
-        font-size: 0.8em;
-    }
-    .titre__plat--chic {
-        font-size: 0.8em;
-    }
+    .titre__entree--chic,
+    .titre__plat--chic,
     .titre__dessert--chic {
-        font-size: 0.8em;
+        @include sizeText;
     }
-    .bloc__info--prix--chic--entree {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .bloc__info--prix--chic--plat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+    .bloc__info--prix--chic--entree,
+    .bloc__info--prix--chic--plat,
     .info__chic--dessert {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        @include bloc__info--prix--chic;
     }
     .info__chic {
         margin-bottom: 10px;
-        font-size: 12px;
+        @include sizeText;
     }
     .prix__chic {
-        font-size: 13px;
+        @include sizeText;
         margin-top: 0px;
     }
     .info__chic--dessert {
         margin-left: 0px;
-        font-size: 12px;
+        @include sizeText;
     }
 }

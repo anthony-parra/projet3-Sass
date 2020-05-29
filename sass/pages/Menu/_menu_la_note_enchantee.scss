@@ -46,12 +46,6 @@
         padding-right: 5px;
         font-size: 0.8em;
     }
-    img {
-        width: 100px;
-    }
-    .trait__image {
-        width: 35%;
-    }
     .note__musique {
         width: 60px;
     }
@@ -59,13 +53,7 @@
         font-size: 3em;
     }
     h2 {
-        font-size: 1.5em;
-    }
-    h3 {
-        font-size: 1em;
-    }
-    figure {
-        font-size: 1.5em;
+        @include sizeTitleMenu;
     }
     .bloc__info--prix--enchante {
         flex-direction: column;
@@ -74,19 +62,13 @@
     .bloc__enchante {
         width: 90%;
         padding: 0px 10px 0px 10px;
-    }
-    .bloc__info--enchante {
-        font-size: 14px;
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    .bloc__prix--enchante {
-        font-size: 14px;
-    }
-    .image__menu--bottom {
-        font-size: 1.5em;
-    }
-    .bloc__titre--entree {
-        margin: 10px 0px 10px 0px;
+        .bloc__info--enchante {
+            @include sizeText;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .bloc__prix--enchante {
+            @include sizeText;
+        }
     }
 }

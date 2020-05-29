@@ -51,23 +51,19 @@
         padding: 0px 10px 60px 10px;
     }
     .bloc__titre--menu--palette {
-        font-size: 1.5em;
-    }
-    .bloc__menu--palette {
-        font-size: 1em;
+        @include sizeTitleMenu;
     }
     .bloc__info--prix--palette {
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 15px;
-    }
-    .info__palette {
-        font-size: 15px;
-        margin-bottom: 0px;
-    }
-    .prix__palette {
-        text-align: center;
-        font-size: 15px;
+        .info__palette {
+            @include sizeText;
+            margin-bottom: 0px;
+        }
+        .prix__palette {
+            text-align: center;
+            @include sizeText;
+        }
     }
 }
