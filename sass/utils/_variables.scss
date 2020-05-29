@@ -93,8 +93,9 @@ $backGroundColorPapille :#f9f9f9;
     margin: 0px 10px 0px 10px;
     padding-bottom: 10px;
     background-size: 0 100%;
-    transition: background-size .3s;
-    width: 40%;
+    transition: background-size .5s;
+    margin-left: auto;
+    margin-right: auto;
     &:hover {
         background-size: 100% 100%;
     }

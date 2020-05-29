@@ -377,8 +377,9 @@ h2 {
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
   background-size: 0 100%;
-  transition: background-size 0.3s;
-  width: 40%;
+  transition: background-size 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bloc__enchante .titre__entree--enchante:hover {
   background-size: 100% 100%;
@@ -511,8 +512,9 @@ h2 {
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
   background-size: 0 100%;
-  transition: background-size 0.3s;
-  width: 40%;
+  transition: background-size 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bloc__chic .titre__entree--chic:hover {
   background-size: 100% 100%;
@@ -540,8 +542,9 @@ h2 {
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
   background-size: 0 100%;
-  transition: background-size 0.3s;
-  width: 40%;
+  transition: background-size 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bloc__chic .titre__plat--chic:hover {
   background-size: 100% 100%;
@@ -560,8 +563,9 @@ h2 {
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
   background-size: 0 100%;
-  transition: background-size 0.3s;
-  width: 40%;
+  transition: background-size 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bloc__chic .titre__dessert--chic:hover {
   background-size: 100% 100%;
@@ -680,8 +684,9 @@ h2 {
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
   background-size: 0 100%;
-  transition: background-size 0.3s;
-  width: 40%;
+  transition: background-size 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .titre__entree--delice:hover {
   background-size: 100% 100%;
@@ -696,8 +701,9 @@ h2 {
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
   background-size: 0 100%;
-  transition: background-size 0.3s;
-  width: 40%;
+  transition: background-size 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .titre__plat--delice:hover {
   background-size: 100% 100%;
@@ -712,8 +718,9 @@ h2 {
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
   background-size: 0 100%;
-  transition: background-size 0.3s;
-  width: 40%;
+  transition: background-size 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .titre__dessert--delice:hover {
   background-size: 100% 100%;
@@ -820,8 +827,9 @@ h2 {
   margin: 0px 10px 0px 10px;
   padding-bottom: 10px;
   background-size: 0 100%;
-  transition: background-size 0.3s;
-  width: 40%;
+  transition: background-size 0.5s;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bloc__menu--palette:hover {
   background-size: 100% 100%;
