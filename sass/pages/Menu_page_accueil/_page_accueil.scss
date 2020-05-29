@@ -28,6 +28,6 @@ h1 {
 
 h2 {
     text-align: center;
-    margin-top: 2em;
+    font-weight: inherit;
     @include sizeTitle;
 }

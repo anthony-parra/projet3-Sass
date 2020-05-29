@@ -64,39 +64,40 @@ header {
 
 .soon {
   display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
-}
-
-.suspension {
   background-color: #579c87;
   border-radius: 15px;
   color: #fdcb46;
-  font-size: 3em;
-  font-weight: normal;
-  padding: 20px 50px 20px 50px;
   width: 370px;
-}
-.suspension:after {
-  animation: suspension steps(1, end) 1s infinite;
-  content: "";
+  margin-bottom: 100px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes suspension {
+.point1 {
+  animation: ellipsis infinite;
+  animation-duration: 1000ms;
+  animation-delay: 1s;
+}
+
+.point2 {
+  animation: ellipsis infinite;
+  animation-duration: 1000ms;
+  animation-delay: 1.1s;
+}
+
+.point3 {
+  animation: ellipsis infinite;
+  animation-duration: 1000ms;
+  animation-delay: 1.2s;
+}
+
+@keyframes ellipsis {
   0% {
-    content: "";
-  }
-  25% {
-    content: ".";
-  }
-  50% {
-    content: "..";
-  }
-  75% {
-    content: "...";
+    opacity: 0;
   }
   100% {
-    content: "";
+    opacity: 1;
   }
 }
 footer {
@@ -142,7 +143,7 @@ h1 {
 
 h2 {
   text-align: center;
-  margin-top: 2em;
+  font-weight: inherit;
   font-size: 2.3em;
 }
 
