@@ -113,18 +113,6 @@ footer {
 }
 
 /* -----------------------------Fichier @import pour la page d'accueil-------------------------- */
-.zoom__effect {
-  transform: scale(1);
-  transition: 0.7s;
-  opacity: 1;
-}
-
-.zoom__effect:hover {
-  transform: scale(1.15);
-  transition: 0.7s;
-  opacity: 0.6;
-}
-
 .bloc__menu--enchante--chic {
   margin: 50px 100px 25px 100px;
   display: flex;
@@ -159,6 +147,14 @@ h2 {
   border: none;
   text-align: center;
   background-color: #fcdfdb;
+  transform: scale(1);
+  transition: 0.7s;
+  opacity: 1;
+}
+.bloc__menu--enchante:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+  opacity: 0.6;
 }
 
 .titre__image {
@@ -186,6 +182,14 @@ h2 {
   border: none;
   text-align: center;
   background-color: #fff5fe;
+  transform: scale(1);
+  transition: 0.7s;
+  opacity: 1;
+}
+.bloc__menu--chic:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+  opacity: 0.6;
 }
 
 .menu__titre--chic {
@@ -215,6 +219,14 @@ h2 {
   border: none;
   text-align: center;
   background-color: #f9f9f9;
+  transform: scale(1);
+  transition: 0.7s;
+  opacity: 1;
+}
+.bloc__menu--delice:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+  opacity: 0.6;
 }
 
 .menu__titre--delice {
@@ -244,6 +256,14 @@ h2 {
   border: none;
   text-align: center;
   background-color: #fdfffd;
+  transform: scale(1);
+  transition: 0.7s;
+  opacity: 1;
+}
+.bloc__menu--palette--accueil:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+  opacity: 0.6;
 }
 
 .menu__titre--palette {

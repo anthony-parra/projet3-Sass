@@ -1,6 +1,14 @@
 .bloc__menu--chic {
     @include bloc_menu_accueil;
     background-color: $backGroundColorChic;
+    transform: scale(1);
+    transition: .7s;
+    opacity: 1;
+    &:hover {
+        transform: scale(1.05);
+        transition: .7s;
+        opacity: 0.6;
+    }
 }
 
 .menu__titre--chic {
