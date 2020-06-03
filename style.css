@@ -147,12 +147,14 @@ h2 {
   border: none;
   text-align: center;
   background-color: #fcdfdb;
+}
+.bloc__menu--enchante .zoom__effect {
   transform: scale(1);
   transition: 0.7s;
   opacity: 1;
 }
-.bloc__menu--enchante:hover {
-  transform: scale(1.05);
+.bloc__menu--enchante:hover .zoom__effect {
+  transform: scale(1.15);
   transition: 0.7s;
   opacity: 0.6;
 }
@@ -182,12 +184,14 @@ h2 {
   border: none;
   text-align: center;
   background-color: #fff5fe;
+}
+.bloc__menu--chic .zoom__effect {
   transform: scale(1);
   transition: 0.7s;
   opacity: 1;
 }
-.bloc__menu--chic:hover {
-  transform: scale(1.05);
+.bloc__menu--chic:hover .zoom__effect {
+  transform: scale(1.15);
   transition: 0.7s;
   opacity: 0.6;
 }
@@ -219,12 +223,14 @@ h2 {
   border: none;
   text-align: center;
   background-color: #f9f9f9;
+}
+.bloc__menu--delice .zoom__effect {
   transform: scale(1);
   transition: 0.7s;
   opacity: 1;
 }
-.bloc__menu--delice:hover {
-  transform: scale(1.05);
+.bloc__menu--delice:hover .zoom__effect {
+  transform: scale(1.15);
   transition: 0.7s;
   opacity: 0.6;
 }
@@ -256,12 +262,14 @@ h2 {
   border: none;
   text-align: center;
   background-color: #fdfffd;
+}
+.bloc__menu--palette--accueil .zoom__effect {
   transform: scale(1);
   transition: 0.7s;
   opacity: 1;
 }
-.bloc__menu--palette--accueil:hover {
-  transform: scale(1.05);
+.bloc__menu--palette--accueil:hover .zoom__effect {
+  transform: scale(1.15);
   transition: 0.7s;
   opacity: 0.6;
 }
@@ -281,6 +289,15 @@ h2 {
   color: #53b02c;
 }
 
+@media screen and (min-width: 1500px) {
+  .bloc__menu--enchante,
+.bloc__menu--chic,
+.bloc__menu--delice,
+.bloc__menu--palette--accueil {
+    width: 500px;
+    height: 600px;
+  }
+}
 @media screen and (max-width: 900px) {
   .bloc__menu--enchante--chic {
     margin: 50px 50px 25px 50px;

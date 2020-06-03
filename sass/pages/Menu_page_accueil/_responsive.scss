@@ -1,3 +1,13 @@
+    @media screen and (min-width: 1500px) {
+        .bloc__menu--enchante,
+        .bloc__menu--chic,
+        .bloc__menu--delice,
+        .bloc__menu--palette--accueil {
+            width: 500px;
+            height: 600px;
+        }
+    }
+    
     @media screen and (max-width: 900px) {
         .bloc__menu--enchante--chic {
             margin: 50px 50px 25px 50px;

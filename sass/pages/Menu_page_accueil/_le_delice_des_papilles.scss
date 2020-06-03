@@ -1,13 +1,17 @@
 .bloc__menu--delice {
     @include bloc_menu_accueil;
     background-color: $backGroundColorPapille;
-    transform: scale(1);
-    transition: .7s;
-    opacity: 1;
-    &:hover {
-        transform: scale(1.05);
+    .zoom__effect {
+        transform: scale(1);
         transition: .7s;
-        opacity: 0.6;
+        opacity: 1;
+    }
+    &:hover {
+        .zoom__effect {
+            transform: scale(1.15);
+            transition: .7s;
+            opacity: 0.6;
+        }
     }
 }
 
